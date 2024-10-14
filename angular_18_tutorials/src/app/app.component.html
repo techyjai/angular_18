@@ -1,0 +1,102 @@
+<!-- <h1>Hello</h1> -->
+
+<!-- <table style="width: 100%">
+  <tr>
+    <td>
+      <app-add-employee></app-add-employee>
+    </td>
+    <td>
+      <app-employee-list></app-employee-list>
+    </td>
+  </tr>
+</table> -->
+
+<!-- <app-data-binding></app-data-binding> -->
+
+<!-- <app-structural-dir></app-structural-dir> -->
+ <!-- <app-attribute-directive></app-attribute-directive> -->
+
+ <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <!-- <li class="nav-item" style="margin-top:-12px;">
+          <a class="nav-link active" routerLink="emp-List">EmployeeList</a>
+        </li>
+        <li class="nav-item" style="margin-top:-12px;">
+          <a class="nav-link" routerLink="add-emp">Add Employee</a>
+        </li> -->
+        <li class="nav-item" style="margin-top:-12px;">
+          <a class="nav-link" routerLink="data-bind">DB</a>
+        </li>
+        <li class="nav-item" style="margin-top:-12px;">
+          <a class="nav-link" routerLink="lifecycle-event">Lifecycle Event</a>
+        </li>
+        <li class="nav-item dropdown" style="margin-top:-12px;">
+          <a class="nav-link dropdown-toggle"  id="navbarDarkDropdownMenuLink"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+         Directive
+          </a>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+          <li class="nav-item" style="margin-top:-12px;">
+            <a class="nav-link" routerLink="attr-dir">Attribute </a>
+          </li>
+          <li class="nav-item" style="margin-top:-12px;">
+            <a class="nav-link" routerLink="structural-dir">Structural </a>
+          </li>
+          <li class="nav-item" style="margin-top:-12px;">
+            <a class="nav-link" routerLink="ng-template">ngTemplate </a>
+          </li>
+        </ul>
+        </li>
+        
+       
+        <li class="nav-item dropdown" style="margin-top:-12px;">
+          <a class="nav-link dropdown-toggle"  id="navbarDarkDropdownMenuLink"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          ControlFlow
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li> <a class="nav-link" routerLink="ifelse">If-Else</a></li>
+            <li> <a class="nav-link" routerLink="for"> For , switch</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" style="margin-top:-12px;">
+          <a class="nav-link" routerLink="pipe"> Pipe</a>
+        </li>
+        <li class="nav-item dropdown" style="margin-top:-12px;">
+          <a class="nav-link dropdown-toggle"  id="navbarDarkDropdownMenuLink"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Forms
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="template">Template</a></li>
+            <li><a class="dropdown-item" routerLink="reactive">Reactive </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" style="margin-top:-12px;">
+          <a class="nav-link dropdown-toggle"  id="navbarDarkDropdownMenuLink"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          API
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="get">GET</a></li>
+            <li><a class="dropdown-item" routerLink="post">POST </a></li>
+          </ul>
+        </li>
+       
+      </ul>
+      <ul class="navbar-nav">
+     
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet> </router-outlet>
+</div>

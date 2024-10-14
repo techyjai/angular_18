@@ -1,0 +1,65 @@
+<div class="row">
+    <div class="col-4">
+
+    </div>
+    <div class="row">
+        <div class="col-4">
+            One way from .ts to .html
+        </div>
+        <div class="col-4">
+
+        </div>
+        <div class="col-4">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            Interpolation
+            <div class="row">
+                <div class="col-4 bg-success">
+                    <h4>{{courseName}}</h4>
+                    <input type="text" value="{{courseName}} " placeholder="Enter Course Name" />
+                    <input type="{{inputType}}" />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            Property Binding
+            <div class="bg-danger">Danger</div>
+            <div class="{{myClassName}}">Primary //Interpolation method</div>
+            <div [class]="myClassName">Primary //Property Binding method
+            </div>
+            <input type="text" [value]="courseName">
+            <input [type]="inputType" [checked]="isIndian" />
+        </div>
+        <div class="col-6">
+            Event Binding from .html to .ts file
+            <button class="btn btn-success" (click)="showAlert('Hello')">Show Welcome</button>
+            <span (click)="showAlert('click event Work on span also')"> CLick me</span>
+            <button class="btn btn-success" (click)="changeCourseName()">Change COurse</button>
+            <input type="text" [(ngModel)]="courseName" />
+            <input type="checkbox" [(ngModel)]="isIndian" />
+            <select [(ngModel)]="stateName">
+                <option value="">Choose any State</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+            </select>
+        </div>
+        <div class="col-6">
+            <h3>{{firstName()}}</h3>
+
+        </div>
+        <div class="col-4"> </div>
+    </div>
+    <br/>
+<div class="row">
+    <div class="col-3">
+        <input type="text" value="{{firstName()}}">
+        <input type="text" [value]="firstName()">
+        <input type="text" [ngModel] ="firstName()" (ngModelChange)="firstName.set($event);">
+    </div>
+</div>
+</div>

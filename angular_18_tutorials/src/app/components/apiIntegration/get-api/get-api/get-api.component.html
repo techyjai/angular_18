@@ -1,0 +1,35 @@
+<!-- <p>get-api works!</p> -->
+<!-- <div class="alert alert-success">
+    <strong>Success!</strong> Welcome to GET API page
+  </div> -->
+  <app-alert [message]="alertMsg" [alertType]="'Warning'"></app-alert>
+  <br>
+  <app-alert  [message]="'Some Error occur'" [alertType]="'Error'" ></app-alert>
+
+  <app-my-button [btnText]="'Close'" [btnClass]="'btn btn-danger'"></app-my-button>
+  <br>
+
+<div class="row">
+    <div class="col-3">
+        <button class="btn btn-success" (click)="getAllUsers()">Get Users</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-success" (click)="getAllCustomers()">Get Customers</button>
+    </div>
+    <div class="col-3">
+        <select class="form--select">
+            @for ( item of userList ; track $index){
+            <option>{{item.name}}</option>
+            }
+        </select>
+    </div>
+
+   <button (click)="changeMsg()">Change Message</button>
+</div>
+<!-- <div class="row">
+    <ul *ngFor="let user of userList">
+        <li>
+            {{user | json}}
+        </li>
+    </ul>
+</div> -->
